@@ -1,0 +1,69 @@
+.about__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about__title {
+  font-size: clamp(24px, 3.5vw, 30px);
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.about__text {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.about__card {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about__objective {
+  color: var(--text-secondary);
+  font-size: 14.5px;
+  line-height: 1.65;
+}
+
+.about__education {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about__education-label {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.about__education-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.about__education-item strong {
+  font-size: 15px;
+}
+
+.about__education-item span {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 860px) {
+  .about__inner {
+    grid-template-columns: 1fr;
+  }
+}
