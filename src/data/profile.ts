@@ -46,7 +46,7 @@ export interface ProjectItem {
   bullets: string[]
   tags: string[]
   images?: ProjectImage[]
-  link?: { href: string; label: string }
+  links?: { href: string; label: string }[]
   kind: 'dashboard' | 'workflow'
 }
 
@@ -187,7 +187,10 @@ export const projects: ProjectItem[] = [
       { src: 'vendas-curva-abc.png', alt: 'Curva ABC de produtos e estoque crítico', label: 'Curva ABC' },
       { src: 'vendas-tabela.png', alt: 'Top clientes e resumo por filial', label: 'Filiais' },
     ],
-    link: { href: 'https://github.com/ViniVieira11/grafico_com_ia', label: 'Ver código no GitHub' },
+    links: [
+      { href: 'https://vinivieira11.github.io/grafico_com_ia/', label: 'Abrir dashboard ao vivo' },
+      { href: 'https://github.com/ViniVieira11/grafico_com_ia', label: 'Ver código no GitHub' },
+    ],
   },
   {
     title: 'Central de Indicadores — Suporte TI',

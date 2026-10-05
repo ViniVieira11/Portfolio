@@ -122,10 +122,14 @@ function ProjectCard({ project }: { project: ProjectItem }) {
             </span>
           ))}
         </div>
-        {project.link && (
-          <a className="project__link" href={project.link.href} target="_blank" rel="noreferrer">
-            {project.link.label} →
-          </a>
+        {project.links && (
+          <div className="project__links">
+            {project.links.map((link) => (
+              <a className="project__link" href={link.href} target="_blank" rel="noreferrer" key={link.href}>
+                {link.label} →
+              </a>
+            ))}
+          </div>
         )}
       </div>
     </article>
