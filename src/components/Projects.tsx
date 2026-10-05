@@ -122,15 +122,6 @@ function ProjectCard({ project }: { project: ProjectItem }) {
             </span>
           ))}
         </div>
-        {project.links && (
-          <div className="project__links">
-            {project.links.map((link) => (
-              <a className="project__link" href={link.href} target="_blank" rel="noreferrer" key={link.href}>
-                {link.label} →
-              </a>
-            ))}
-          </div>
-        )}
       </div>
     </article>
   )
@@ -143,7 +134,7 @@ function Projects() {
         <div className="section-heading">
           <span className="eyebrow">Projetos</span>
           <h2>O dado em ação</h2>
-          <p>Projetos reais: dashboards comerciais em Power BI e na web, e um pipeline de indicadores de suporte no KNIME.</p>
+          <p>Dois projetos reais: um dashboard comercial em Power BI e um pipeline de indicadores de suporte no KNIME.</p>
         </div>
         <div className="projects__grid">
           {projects.map((project) => (

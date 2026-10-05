@@ -46,7 +46,6 @@ export interface ProjectItem {
   bullets: string[]
   tags: string[]
   images?: ProjectImage[]
-  links?: { href: string; label: string }[]
   kind: 'dashboard' | 'workflow'
 }
 
@@ -166,30 +165,6 @@ export const projects: ProjectItem[] = [
       { src: 'magalu-hierarquica.png', alt: 'Análise hierárquica de faturamento', label: 'Análise Hierárquica' },
       { src: 'magalu-devolucoes.png', alt: 'Painel de motivos de devolução', label: 'Devoluções' },
       { src: 'magalu-produtos.png', alt: 'Ranking de produtos mais vendidos', label: 'Produtos' },
-    ],
-  },
-  {
-    title: 'Dashboard de Vendas Web',
-    tool: 'HTML + JavaScript',
-    kind: 'dashboard',
-    summary:
-      'Dashboard web interativo que lê uma planilha Excel direto no navegador e mostra os indicadores de vendas com gráficos animados — 8.000 vendas, 10 filiais, 150 produtos e 1.000 clientes.',
-    bullets: [
-      'KPIs de faturamento líquido (R$ 57,45 Mi), bruto (R$ 60,51 Mi), descontos, ticket médio, itens vendidos e estoque.',
-      'Filtros por filial, categoria e fornecedor; clicar numa barra, fatia ou linha da tabela também filtra todos os gráficos.',
-      'Curva ABC de produtos, top produtos e clientes, estoque crítico e resumo por filial em tabela ordenável.',
-      'Leitura do .xlsx no navegador com SheetJS, gráficos em Chart.js e layout responsivo, sem framework.',
-    ],
-    tags: ['JavaScript', 'Chart.js', 'SheetJS', 'Excel', 'Curva ABC'],
-    images: [
-      { src: 'vendas-visao-geral.png', alt: 'Visão geral do dashboard de vendas com KPIs e faturamento por filial', label: 'Visão geral' },
-      { src: 'vendas-categorias.png', alt: 'Faturamento por categoria, por fornecedor e top produtos', label: 'Categorias' },
-      { src: 'vendas-curva-abc.png', alt: 'Curva ABC de produtos e estoque crítico', label: 'Curva ABC' },
-      { src: 'vendas-tabela.png', alt: 'Top clientes e resumo por filial', label: 'Filiais' },
-    ],
-    links: [
-      { href: 'https://vinivieira11.github.io/grafico_com_ia/', label: 'Abrir dashboard ao vivo' },
-      { href: 'https://github.com/ViniVieira11/grafico_com_ia', label: 'Ver código no GitHub' },
     ],
   },
   {
